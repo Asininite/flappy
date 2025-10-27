@@ -403,10 +403,10 @@
     g.textAlign = 'center';
     g.textBaseline = 'middle';
     g.font = 'bold 24px system-ui, sans-serif';
-    drawOutlinedText(g, 'Get Ready', LOGICAL_WIDTH/2, 140, 'white');
+    drawOutlinedText(g, 'Thayoli Kili', LOGICAL_WIDTH/2, 140, 'white');
     g.font = 'bold 16px system-ui, sans-serif';
-    drawOutlinedText(g, 'Tap/Click/Space to flap', LOGICAL_WIDTH/2, 172, 'white');
-    drawOutlinedText(g, 'Beat your best: ' + best, LOGICAL_WIDTH/2, 196, 'white');
+    drawOutlinedText(g, 'Tap that Thayoli', LOGICAL_WIDTH/2, 172, 'white');
+    drawOutlinedText(g, 'Best Streak: ' + best, LOGICAL_WIDTH/2, 196, 'white');
     g.restore();
   }
 
@@ -415,7 +415,7 @@
     g.textAlign = 'center';
     g.textBaseline = 'middle';
     g.font = 'bold 26px system-ui, sans-serif';
-    drawOutlinedText(g, 'Game Over', LOGICAL_WIDTH/2, 150, 'white');
+    drawOutlinedText(g, 'Thayoli Over', LOGICAL_WIDTH/2, 150, 'white');
     g.font = 'bold 16px system-ui, sans-serif';
     drawOutlinedText(g, `Score: ${score}`, LOGICAL_WIDTH/2, 184, 'white');
     drawOutlinedText(g, `Best: ${best}`, LOGICAL_WIDTH/2, 206, 'white');
