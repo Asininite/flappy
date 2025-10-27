@@ -1,0 +1,25 @@
+<!doctype html>
+<html lang="en">
+<head>
+  <meta charset="utf-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1, viewport-fit=cover" />
+  <meta name="color-scheme" content="dark light" />
+  <title>Flappy Clone</title>
+  <link rel="preload" href="src/game.js" as="script">
+  <link rel="stylesheet" href="style.css" />
+</head>
+<body>
+  <main id="app">
+    <canvas id="game" width="288" height="512" aria-label="Flappy clone canvas" role="img"></canvas>
+    <div id="hud" aria-hidden="true">
+      <div class="row">
+        <span class="badge">Space/Click/Tap: Flap</span>
+        <span class="badge">P: Pause</span>
+        <span class="badge">M: Mute</span>
+        <span class="badge">R: Restart</span>
+      </div>
+    </div>
+  </main>
+  <script defer src="src/game.js"></script>
+</body>
+</html>

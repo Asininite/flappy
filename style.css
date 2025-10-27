@@ -1,0 +1,44 @@
+* { box-sizing: border-box; }
+:root { --bg: #10131a; --fg: #e8ecf1; --accent: #48d97a; }
+html, body { height: 100%; }
+body {
+  margin: 0;
+  background: radial-gradient(circle at 50% 0%, #87CEEB 0%, #a3def6 40%, #cfefff 70%, #e8f7ff 100%);
+  background-color: var(--bg);
+  color: var(--fg);
+  font: 14px/1.4 system-ui, -apple-system, Segoe UI, Roboto, Ubuntu, Cantarell, 'Helvetica Neue', Arial, Noto Sans, 'Apple Color Emoji', 'Segoe UI Emoji', 'Segoe UI Symbol';
+}
+#app {
+  height: 100%;
+  display: grid;
+  place-items: center;
+  padding: 12px;
+}
+canvas#game {
+  image-rendering: pixelated;
+  image-rendering: crisp-edges;
+  width: min(100%, 420px);
+  height: auto;
+  border-radius: 8px;
+  box-shadow: 0 10px 30px rgba(0,0,0,.25), 0 2px 8px rgba(0,0,0,.35) inset;
+  background: #4ec0ca; /* Sky */
+}
+#hud {
+  position: fixed;
+  bottom: 12px;
+  left: 50%;
+  transform: translateX(-50%);
+  display: flex;
+  gap: 8px;
+  flex-direction: column;
+  align-items: center;
+}
+#hud .row { display: flex; gap: 8px; flex-wrap: wrap; justify-content: center; }
+.badge {
+  background: rgba(0,0,0,.45);
+  color: white;
+  padding: 6px 10px;
+  border-radius: 999px;
+  border: 1px solid rgba(255,255,255,.15);
+  backdrop-filter: blur(6px);
+}
